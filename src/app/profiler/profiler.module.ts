@@ -5,6 +5,7 @@ import { IntroComponent } from './intro/intro/intro.component';
 import { ProfilerComponent } from './profiler.component';
 import { ProfilerRoutingModule } from './profiler-routing.module';
 import { FooterComponent } from './footer/footer/footer.component';
+import { AboutComponent } from './about/about/about.component';
 
 
 
@@ -13,7 +14,8 @@ import { FooterComponent } from './footer/footer/footer.component';
     ProfilerComponent,
     HeaderComponent,
     IntroComponent,
-    FooterComponent
+    FooterComponent,
+    AboutComponent
   ],
   imports: [
     CommonModule,
