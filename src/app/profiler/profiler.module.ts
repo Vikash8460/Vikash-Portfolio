@@ -13,6 +13,7 @@ import { SkillsComponent } from './skills/skills/skills.component';
 import { EducationComponent } from './education/education/education.component';
 import { ReferenceComponent } from './reference/reference/reference.component';
 import { ContactComponent } from './contact/contact/contact.component';
+import { SplitPipe } from './split.pipe';
 
 
 
@@ -29,7 +30,8 @@ import { ContactComponent } from './contact/contact/contact.component';
     SkillsComponent,
     EducationComponent,
     ReferenceComponent,
-    ContactComponent
+    ContactComponent,
+    SplitPipe
   ],
   imports: [
     CommonModule,
