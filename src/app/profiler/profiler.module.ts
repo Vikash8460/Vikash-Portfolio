@@ -18,7 +18,7 @@ import { PortfolioComponent } from './portfolio/portfolio/portfolio.component';
 import { ScrollComponent } from './scroll/scroll/scroll.component';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { NgxPaginationModule } from 'ngx-pagination';
 
 
 @NgModule({
@@ -43,6 +43,7 @@ import { BrowserModule } from '@angular/platform-browser';
     CommonModule,
     FormsModule,
     BrowserModule,
+    NgxPaginationModule,
     ProfilerRoutingModule
     
   ]
