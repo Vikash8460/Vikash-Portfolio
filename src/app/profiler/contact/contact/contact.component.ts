@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
+  model: any = {};
 
 }
