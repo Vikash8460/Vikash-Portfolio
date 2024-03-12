@@ -1,24 +1,45 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
-
+import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SkillsComponent } from './profiler/skills/skills/skills.component';
+
+import { RouterModule, Routes } from '@angular/router';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
 import { ProfilerComponent } from './profiler/profiler.component';
+import { ProfilerModule } from './profiler/profiler.module';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
+
+
+
+
+const routes: Routes = [
+  {
+    path: '',
+    component: ProfilerComponent
+  }
+];
 
 @NgModule({
   declarations: [
     AppComponent,
-    SkillsComponent,
-    ProfilerComponent
+    
   ],
+
   imports: [
-    BrowserModule,
-    AppRoutingModule
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
+    BrowserAnimationsModule,
+    RouterModule.forRoot(routes, {
+    initialNavigation: 'enabledBlocking'
+   }),
+    ProfilerModule,
+    HttpClientModule,
+    NgbModule,
+   // AuthServiceService
+
   ],
-  providers: [
-    provideClientHydration()
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
