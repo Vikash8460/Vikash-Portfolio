@@ -12,6 +12,7 @@ import { ExperienceComponent } from './experience/experience/experience.componen
 import { EducationComponent } from './education/education/education.component';
 import { ContactComponent } from './contact/contact/contact.component';
 import { AboutComponent } from './about/about/about.component';
+import { PortfolioComponent } from './portfolio/portfolio/portfolio.component';
 
 const routes: Routes = [
     { path: '', component: ProfilerComponent },
@@ -25,7 +26,7 @@ const routes: Routes = [
     { path: 'footer', component: FooterComponent },
     { path: 'header', component: HeaderComponent },
     { path: 'intro', component: IntroComponent },
-    //   { path: 'portfolio', component: PortfolioComponent },
+    { path: 'portfolio', component: PortfolioComponent },
     { path: 'projects', component: ProjectsComponent },
     { path: 'reference', component: ReferenceComponent },
     { path: 'skills', component: SkillsComponent }
