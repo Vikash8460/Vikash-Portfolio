@@ -7,10 +7,6 @@ import { ProfilerService } from '../../profiler.service';
   styleUrl: './intro.component.scss'
 })
 export class IntroComponent implements OnInit {
-  // ngOnInit(): void {
-  //   throw new Error('Method not implemented.');
-  // }
-
   cvUrl: any
   constructor(private profilerService:ProfilerService) { }
 
