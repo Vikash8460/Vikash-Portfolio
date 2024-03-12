@@ -14,6 +14,7 @@ import { EducationComponent } from './education/education/education.component';
 import { ReferenceComponent } from './reference/reference/reference.component';
 import { ContactComponent } from './contact/contact/contact.component';
 import { SplitPipe } from './split.pipe';
+import { ScrollComponent } from './scroll/scroll/scroll.component';
 
 
 
@@ -31,7 +32,8 @@ import { SplitPipe } from './split.pipe';
     EducationComponent,
     ReferenceComponent,
     ContactComponent,
-    SplitPipe
+    SplitPipe,
+    ScrollComponent
   ],
   imports: [
     CommonModule,
