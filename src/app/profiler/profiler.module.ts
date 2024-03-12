@@ -15,6 +15,7 @@ import { ReferenceComponent } from './reference/reference/reference.component';
 import { ContactComponent } from './contact/contact/contact.component';
 import { SplitPipe } from './split.pipe';
 import { PortfolioComponent } from './portfolio/portfolio/portfolio.component';
+import { ScrollComponent } from './scroll/scroll/scroll.component';
 
 
 
@@ -33,7 +34,8 @@ import { PortfolioComponent } from './portfolio/portfolio/portfolio.component';
     ReferenceComponent,
     ContactComponent,
     SplitPipe,
-    PortfolioComponent
+    PortfolioComponent,
+    ScrollComponent
   ],
   imports: [
     CommonModule,
