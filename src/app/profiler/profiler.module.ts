@@ -16,6 +16,8 @@ import { ContactComponent } from './contact/contact/contact.component';
 import { SplitPipe } from './split.pipe';
 import { PortfolioComponent } from './portfolio/portfolio/portfolio.component';
 import { ScrollComponent } from './scroll/scroll/scroll.component';
+import { FormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
 
 
 
@@ -39,6 +41,8 @@ import { ScrollComponent } from './scroll/scroll/scroll.component';
   ],
   imports: [
     CommonModule,
+    FormsModule,
+    BrowserModule,
     ProfilerRoutingModule
     
   ]
