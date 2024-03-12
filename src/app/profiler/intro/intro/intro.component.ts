@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProfilerService } from '../../profiler.service';
 
 @Component({
   selector: 'app-intro',
@@ -6,16 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrl: './intro.component.scss'
 })
 export class IntroComponent implements OnInit {
-  ngOnInit(): void {
-    throw new Error('Method not implemented.');
-  }
+  // ngOnInit(): void {
+  //   throw new Error('Method not implemented.');
+  // }
 
   cvUrl: any
-  // constructor(private profileService:ProfileService) { }
+  constructor(private profilerService:ProfilerService) { }
 
-  // ngOnInit() {
+  ngOnInit() {
 
-  //   this.cvUrl =  this.profileService.resumeurl
-  // }
+    this.cvUrl =  this.profilerService.resumeurl
+  }
 
 }
